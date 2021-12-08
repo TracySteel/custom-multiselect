@@ -1,0 +1,40 @@
+.select {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 600px;
+    gap: 40px;
+}
+
+.select__item {
+    padding: 10px;
+    cursor: pointer;
+    font-family: "Museo W01_100",sans-serif;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid #f2f2f2;
+    border-radius: 20px;
+    background: #f2f2f2;
+    color: #3bbcf4;
+    transition: background 0.1s;
+}
+
+.select__item--selected {
+    background: #3bbcf4;
+    color: #f2f2f2;
+}
+
+.symbol__select {
+    content: "+";
+    font-family: "Museo W01_100",sans-serif;
+    font-weight: 400;
+    float: right;
+    color: #3bbcf4;
+}
+
+.symbol__deselect {
+    content: "-";
+    font-family: "Museo W01_100",sans-serif;
+    font-weight: 400;
+    float: right;
+    color: #fff;
+}
